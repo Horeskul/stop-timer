@@ -71,34 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.wrapper {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 body {
-  padding: 1rem;
   font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
-  background: #045542;
-}
-
-.container {
-  max-width: 42rem;
-}
-.main__card {
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,78 +83,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
-.main__title {
-  font-size: 2.6rem;
-  padding: 1rem;
+
+.buttons {
   text-align: center;
-  border: 0.2rem solid #fff;
-  border-radius: 0.5rem;
+}
+
+button {
+  margin: 0 1rem;
+}
+button i {
+  font-size: 2rem;
+  padding: 1rem;
   color: #fff;
-  background: #0e8181;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  -webkit-box-shadow: 0 0.2rem 0.8rem 0.2rem #000000;
-          box-shadow: 0 0.2rem 0.8rem 0.2rem #000000;
-}
-@media (max-width: 767.98px) {
-  .main__title {
-    font-size: 2rem;
-    padding: 0.7rem;
-  }
-}
-.main__content {
-  border: 0.2rem solid #fff;
-  border-radius: 2rem;
-  -webkit-box-shadow: 0 0.2rem 0.8rem 0.2rem #000000;
-          box-shadow: 0 0.2rem 0.8rem 0.2rem #000000;
-  padding: 4rem;
-  background: #621919;
-  color: #fff;
-  margin-bottom: 2rem;
-}
-@media (max-width: 767.98px) {
-  .main__content {
-    padding: 2rem;
-  }
 }
 
-.quote-text {
-  margin-bottom: 2rem;
+#play {
+  background-color: green;
 }
 
-.quote {
-  font-style: italic;
-  font-weight: 200;
-  line-height: 2.5rem;
+#pause {
+  background-color: orange;
 }
 
-.person::before {
-  content: "-";
-}
-
-#generate {
-  background: rgba(232, 32, 6, 0.7882352941);
-  color: #fff;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0.1rem 0.6rem 0.1rem #000000;
-          box-shadow: 0 0.1rem 0.6rem 0.1rem #000000;
-}
-#generate:active {
-  background-color: #000000;
-}
-@media (min-width: 767.98px) {
-  #generate:hover {
-    background-color: #000000;
-  }
+#reset {
+  background-color: red;
 }

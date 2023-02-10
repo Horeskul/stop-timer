@@ -1,3 +1,40 @@
 @import '_reset';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500&display=swap');
 
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+}
+.buttons {
+    text-align: center;
+}
+button{
+    margin: 0 1rem;
+    i{
+        font-size: 2rem;
+        padding: 1rem;
+        color: #fff;
+    }
+}
+.fa-solid {
+}
+.fa-play {
+}
+.fa-arrow-rotate-left {
+}
+
+#play{
+    background-color: green;
+}
+#pause{
+    background-color: orange;
+}
+#reset{
+    background-color: red;
+}
